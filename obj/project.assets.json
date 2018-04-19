@@ -13658,13 +13658,13 @@
       "projectName": "RealEstateProject",
       "projectPath": "/Users/kristikristo/Projects/RealEstateProject/RealEstateProject.csproj",
       "packagesPath": "/Users/kristikristo/.nuget/packages/",
-      "outputPath": "/Users/kristikristo/Projects/RealEstateProject/obj",
+      "outputPath": "/Users/kristikristo/Projects/RealEstateProject/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/kristikristo/.config/NuGet/NuGet.Config"
+        "/Users/kristikristo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -13686,53 +13686,52 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
+          "AutoMapper": {
             "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
+            "version": "[6.2.2, )"
+          },
+          "Microsoft.AspNet.Mvc": {
+            "target": "Package",
+            "version": "[5.2.4, )"
+          },
+          "Microsoft.AspNet.WebApi": {
+            "target": "Package",
+            "version": "[5.2.4, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.6"
+            "version": "[2.0.6, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.0.2, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.2"
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.3"
+            "version": "[2.0.3, )"
           },
           "MySql.Data.Entity": {
             "target": "Package",
-            "version": "6.10.6"
-          },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "2.0.2"
+            "version": "[6.10.6, )"
           },
           "MySql.Data.EntityFrameworkCore": {
             "target": "Package",
-            "version": "6.10.6"
-          },
-          "Microsoft.AspNet.WebApi": {
-            "target": "Package",
-            "version": "5.2.4"
+            "version": "[6.10.6, )"
           },
           "knockoutjs": {
             "target": "Package",
-            "version": "3.4.2"
-          },
-          "AutoMapper": {
-            "target": "Package",
-            "version": "6.2.2"
-          },
-          "Microsoft.AspNet.Mvc": {
-            "target": "Package",
-            "version": "5.2.4"
+            "version": "[3.4.2, )"
           }
         },
         "imports": [

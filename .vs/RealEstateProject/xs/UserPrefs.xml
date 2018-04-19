@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{E1CCD9A8-9F19-415F-929A-C5D1AE597551}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PropertyController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.Development.json">
     <Files>
       <File FileName="Models/UserWithRolesViewModel.cs" Line="7" Column="25" />
       <File FileName="Models/ApplicationUser.cs" Line="10" Column="41" />
@@ -19,7 +19,7 @@
       <File FileName="Startup.cs" Line="19" Column="31" />
       <File FileName="Controllers/PropertyController.cs" Line="63" Column="30" />
       <File FileName="Views/Property/Delete.cshtml" Line="47" Column="43" />
-      <File FileName="Views/Property/Details.cshtml" Line="37" Column="24" />
+      <File FileName="Views/Property/Details.cshtml" Line="40" Column="25" />
       <File FileName="Program.cs" Line="27" Column="51" />
       <File FileName="Data/Seed.cs" Line="56" Column="1" />
       <File FileName="Controllers/HomeController.cs" Line="20" Column="76" />
@@ -35,6 +35,8 @@
       <File FileName="Views/Property/Edit.cshtml" Line="55" Column="13" />
       <File FileName="Views/Home/About.cshtml" Line="7" Column="110" />
       <File FileName="Views/Home/Contact.cshtml" Line="9" Column="1" />
+      <File FileName="appsettings.Development.json" Line="10" Column="33" />
+      <File FileName="appsettings.json" Line="11" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
