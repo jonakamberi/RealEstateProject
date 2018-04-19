@@ -31,13 +31,16 @@ namespace RealEstateProject.Controllers
         {
             ViewData["ErrorMessage"] = TempData["ErrorMessage"] as string;
             ViewData["SuccessData"] = TempData["SuccessData"] as string;
+
+            // Retrieving list of users, joined with the respective roles
             var listOfUsers = (from u in _context.Users
                                let query = (from ur in _context.Set<IdentityUserRole<string>>()
-                                           where ur.UserId.Equals(u.Id)
+                                            where ur.UserId.Equals(u.Id)
                                             join r in _context.Roles on ur.RoleId equals r.Id
-                                           select r.Name)
+                                            select r.Name)
                                select new UserWithRolesViewModel() { User = u, Roles = query.ToList<string>() })
-                         .ToList();
+                .ToList();
+            
             return View(listOfUsers);
         }
 
@@ -47,15 +50,18 @@ namespace RealEstateProject.Controllers
         {
             try
             {
+                // Find user with id and add to the role Admin.
                 var appUser = await _userManager.FindByIdAsync(id);
                 await _userManager.AddToRoleAsync(appUser, "Admin");
                 _context.SaveChanges();
             }
             catch
             {
+                TempData["ErrorMessage"] = "An error occurred";
+                return RedirectToAction("Index");
                 throw;
             }
-            TempData["SuccessData"] = "User added from admin role";
+            TempData["SuccessData"] = "User added to admin role";
             return RedirectToAction(nameof(Index));
         }
 
@@ -66,7 +72,6 @@ namespace RealEstateProject.Controllers
         {
             try
             {
-
                 var appUser = await _userManager.FindByIdAsync(id);
 
                 if (appUser.Email == _configuration.GetSection("AppSettings")["UserEmail"]) {
@@ -78,6 +83,8 @@ namespace RealEstateProject.Controllers
             }
             catch
             {
+                TempData["ErrorMessage"] = "An error occurred";
+                return RedirectToAction("Index");
                 throw;
             }
             TempData["SuccessData"] = "User removed from admin role";

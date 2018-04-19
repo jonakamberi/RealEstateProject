@@ -42,8 +42,8 @@ namespace RealEstateProject.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Property
-                .SingleOrDefaultAsync(m => m.Id == id);
+            var @property = await _context.Property.SingleOrDefaultAsync(m => m.Id == id);
+
             if (@property == null)
             {
                 return NotFound();
@@ -76,6 +76,8 @@ namespace RealEstateProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,title,description,URL,rooms,address,price")] Property @property)
         {
+            // Check if the create property object is valid based on the model description
+            // It validates the input, checks for SQL injections.
             if (ModelState.IsValid)
             {
                 _context.Add(@property);
