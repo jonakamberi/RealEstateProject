@@ -1,0 +1,54 @@
+@model IEnumerable<RealEstateProject.Models.UserWithRolesViewModel>
+
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>
+            Manage your users and roles
+        </h2>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        @if (ViewData["ErrorMessage"] != null) {
+            <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+        }
+        @if (ViewData["SuccessData"] != null) {
+            <div class="alert alert-success" role="alert">@ViewData["SuccessData"]</div>
+        }
+       <table class="table">
+        <tr>
+                <th>Email</th>
+                <th>Role</th>
+        </tr>
+
+
+        @foreach (var user in Model)
+        {
+            var appUser = user.User;
+            var roles = user.Roles;
+            <tr>
+                <td>
+                    @appUser.Email
+                </td>
+                <td>
+                    @if (roles.IndexOf("Admin") != -1)
+                     {
+                        <a asp-action="RemoveAdmin" asp-route-id="@appUser.Id">Remove Admin</a>
+                     }
+                     else
+                     {
+                        <a asp-action="MakeAdmin" asp-route-id="@appUser.Id">Make Admin</a>
+                    }
+                </td>
+            </tr>
+        }
+
+        </table>
+    </div>
+</div>

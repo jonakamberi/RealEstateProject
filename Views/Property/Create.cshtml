@@ -1,0 +1,91 @@
+@model RealEstateProject.Models.Property
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h2>Create</h2>
+<h4>Property</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="title" class="control-label"></label>
+                <input asp-for="title" class="form-control" />
+                <span asp-validation-for="title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="description" class="control-label"></label>
+                <input asp-for="description" class="form-control" />
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="URL" class="control-label"></label>
+                <input id="URL" onchange="changeProfilePicture()" asp-for="URL" class="form-control" />
+                <span asp-validation-for="URL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rooms" class="control-label"></label>
+                <input asp-for="rooms" class="form-control" />
+                <span asp-validation-for="rooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="address" class="control-label"></label>
+                <input asp-for="address" class="form-control" />
+                <span asp-validation-for="address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-8">
+         <div id="thumbnail" class="thumbnail" style="display: none;">
+            <img id="myImg" style="height: 250px; width: 250px" class="responsive">
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
+@section Scripts
+{
+  <script>
+    function checkUrl(url) {
+        var request = false;
+        if (window.XMLHttpRequest) {
+                request = new XMLHttpRequest;
+        } else if (window.ActiveXObject) {
+                request = new ActiveXObject("Microsoft.XMLHttp");
+        }
+
+        if (request) {
+                request.open("GET", url);
+                if (request.status == 200) { return true; }
+        }
+
+        return false;
+    }
+    
+    function changeProfilePicture() {
+        var x = document.getElementById("URL");
+        var thumbnail = document.getElementById("thumbnail");
+
+        var expression = /[-a-zA-Z0-9@@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@@:%_\+.~#?&//=]*)?/gi;
+        var regex = new RegExp(expression);
+
+        if (x.value.match(regex)) {
+            document.getElementById("myImg").src = x.value;
+            thumbnail.style.display = 'block';
+        } else {
+            thumbnail.style.display = 'none';
+        }
+    }
+    </script>
+}
+

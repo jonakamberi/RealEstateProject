@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Penthouses";
+}
+
+<div class="page-header">
+    <h1>Penthouses</h1>
+    <span>We use a Web API + knockout JS to show penthouses</span>
+</div>
+
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">Penthouses</h2>
+      </div>
+      <div class="panel-body">
+        <ul class="list-unstyled" data-bind="foreach: penthouses">
+          <li>
+            <strong><span data-bind="text: name"></span></strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="alert alert-danger" data-bind="visible: error"><p data-bind="text: error"></p></div>
+  </div>
+</div>
+
+<div id="map" style="height: 500px; width: 100%;" data-tap-disabled="true" ></div>
+

@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{E1CCD9A8-9F19-415F-929A-C5D1AE597551}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PropertyController.cs">
+    <Files>
+      <File FileName="Models/UserWithRolesViewModel.cs" Line="7" Column="25" />
+      <File FileName="Models/ApplicationUser.cs" Line="10" Column="41" />
+      <File FileName="Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Models/ManageViewModels/ChangePasswordViewModel.cs" Line="1" Column="1" />
+      <File FileName="Models/ManageViewModels/EnableAuthenticatorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Models/ManageViewModels/ExternalLoginsViewModel.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AdminController.cs" Line="68" Column="14" />
+      <File FileName="Views/Admin/Index.cshtml" Line="10" Column="40" />
+      <File FileName="Controllers/AccountController.cs" Line="28" Column="9" />
+      <File FileName="Views/Account/AccessDenied.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Account/ConfirmEmail.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Manage/ChangePassword.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Manage/EnableAuthenticator.cshtml" Line="1" Column="1" />
+      <File FileName="Models/ManageViewModels/IndexViewModel.cs" Line="26" Column="1" />
+      <File FileName="Controllers/ManageController.cs" Line="203" Column="41" />
+      <File FileName="Startup.cs" Line="19" Column="31" />
+      <File FileName="Controllers/PropertyController.cs" Line="63" Column="30" />
+      <File FileName="Views/Property/Delete.cshtml" Line="47" Column="43" />
+      <File FileName="Views/Property/Details.cshtml" Line="37" Column="24" />
+      <File FileName="Program.cs" Line="27" Column="51" />
+      <File FileName="Data/Seed.cs" Line="56" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="20" Column="76" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="39" Column="58" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="32" Column="1" />
+      <File FileName="Controllers/PenthousesAPIController.cs" Line="2" Column="25" />
+      <File FileName="Models/Penthouse.cs" Line="1" Column="1" />
+      <File FileName="Models/Property.cs" Line="31" Column="1" />
+      <File FileName="Models/PropertyType.cs" Line="15" Column="1" />
+      <File FileName="Data/ApplicationDbContext.cs" Line="19" Column="70" />
+      <File FileName="Views/Property/Index.cshtml" Line="39" Column="2" />
+      <File FileName="Views/Property/Create.cshtml" Line="54" Column="1" />
+      <File FileName="Views/Property/Edit.cshtml" Line="55" Column="13" />
+      <File FileName="Views/Home/About.cshtml" Line="7" Column="110" />
+      <File FileName="Views/Home/Contact.cshtml" Line="9" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/kristikristo/Projects/RealEstateProject/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" relfile="Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RealEstateProject PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

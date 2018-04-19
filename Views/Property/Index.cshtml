@@ -1,0 +1,41 @@
+@model IEnumerable<RealEstateProject.Models.Property>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>
+            List of Properties 
+            @if (User.IsInRole("Admin"))
+            {
+                <a class="btn btn-primary" asp-action="Create">Create New</a>
+            }
+        </h2>
+    </div>
+</div>
+
+
+<div class="row">
+    @foreach (var item in Model) {
+       <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img style="height: 250px" src="@item.URL">
+          <div class="caption">
+            <h3>@Html.DisplayFor(modelItem => item.title)</h3>
+            <p>@Html.DisplayFor(modelItem => item.description)</p>
+            <p>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary" role="button">Details</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info" role="button">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger" role="button">Delete</a>
+                    }
+            </p>
+          </div>
+        </div>
+      </div>
+}
+    
+</div>

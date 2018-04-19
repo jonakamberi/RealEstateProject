@@ -1,0 +1,12 @@
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/RealEstateProject.csproj.CoreCompileInputs.cache
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/RealEstateProject.AssemblyInfoInputs.cache
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/RealEstateProject.AssemblyInfo.cs
+/Users/kristikristo/Projects/RealEstateProject/bin/Debug/netcoreapp2.0/RealEstateProject.deps.json
+/Users/kristikristo/Projects/RealEstateProject/bin/Debug/netcoreapp2.0/RealEstateProject.runtimeconfig.json
+/Users/kristikristo/Projects/RealEstateProject/bin/Debug/netcoreapp2.0/RealEstateProject.runtimeconfig.dev.json
+/Users/kristikristo/Projects/RealEstateProject/bin/Debug/netcoreapp2.0/RealEstateProject.dll
+/Users/kristikristo/Projects/RealEstateProject/bin/Debug/netcoreapp2.0/RealEstateProject.pdb
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/RealEstateProject.dll
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/RealEstateProject.pdb
+/Users/kristikristo/Projects/RealEstateProject/obj/Debug/netcoreapp2.0/RealEstateProject.csprojResolveAssemblyReference.cache

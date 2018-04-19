@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-RealEstateProject-D681374A-89B1-465A-9133-61C3330AE46B</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" PrivateAssets="All" />
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="6.10.6" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.4" />
+    <PackageReference Include="knockoutjs" Version="3.4.2" />
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.2" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20180407195107_init.cs" />
+    <Compile Remove="Controllers\PropertiesController.cs" />
+    <Compile Remove="Data\Migrations\20180407195107_init.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180407195319_Properties.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180407195319_Properties.cs" />
+    <Compile Remove="Data\EmptyClass.cs" />
+    <Compile Remove="Controllers\PropertiesController1.cs" />
+    <Compile Remove="WebApiConfig.cs" />
+    <Compile Remove="Data\Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Remove="Data\PropertiesDBContextSeeder.cs" />
+    <Compile Remove="Migrations\ApplicationDb\20180408192306_UserMigration.cs" />
+    <Compile Remove="Test\obj\Debug\netcoreapp2.0\Test.Program.cs" />
+    <Compile Remove="Migrations\20180417205420_InitialCreate.cs" />
+    <Compile Remove="Migrations\ApplicationDbContextModelSnapshot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Properties\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Properties\Create.cshtml" />
+    <None Remove="Views\Properties\Delete.cshtml" />
+    <None Remove="Views\Test\Index.cshtml" />
+    <None Remove="Tests\bin\Debug\netcoreapp2.0\RealEstateProject.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+</Project>
