@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{E1CCD9A8-9F19-415F-929A-C5D1AE597551}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/About.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Property/Index.cshtml">
     <Files>
-      <File FileName="wwwroot/js/penthouses.js" Line="1" Column="1" />
-      <File FileName="Models/Property.cs" Line="31" Column="1" />
-      <File FileName="Views/Property/Create.cshtml" Line="54" Column="1" />
-      <File FileName="Controllers/AdminController.cs" Line="64" Column="17" />
-      <File FileName="Views/Home/About.cshtml" Line="7" Column="111" />
+      <File FileName="Views/Shared/_Property.cshtml" Line="19" Column="7" />
+      <File FileName="Views/Property/Index.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
